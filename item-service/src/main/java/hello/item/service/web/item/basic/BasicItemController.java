@@ -18,10 +18,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class BasicItemController {
 
-    @Autowired
     private final ItemRepository itemRepository;
-
-
+    
     // 상품 목록 조회
     @GetMapping
     public String items(Model model) {
